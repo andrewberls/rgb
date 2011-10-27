@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	background: #000;
+}
+#container {	
+	color: #666;
+	font-size: 0.8em;
+	margin: 0 auto;	
+	text-align: left;	
+	position: relative;
+	width: 960px;
+}
+#header {
+	height: 75px;
+}
+h1 {
+	color: #FFF;
+	font-size: 3em;	
+	margin-top: 5px;	
+}
+#header .blue {
+	color: #039ED6;
+}
+#navbar {
+	background-color: #3B3B3B;	
+	border-left: 2px solid #1B1B1B;
+	border-top: 2px solid #1B1B1B;
+	border-right: 2px solid #1B1B1B;	
+	height: 45px;	
+}
+#navbar ul {
+	list-style: none;
+}
+#navbar ul li {	
+	float: left;	
+	margin: 0 16px;	
+}
+#navbar li a:link, #navbar li a:visited {	
+	color: #EAEAEA;
+	display: block;
+	line-height: 45px;
+	padding: 0 8px;
+	text-decoration: none;
+	
+}
+#navbar li a:hover, #navbar li a:active {	
+	background-color: #039ED6;
+	color: #FFF;
+	outline: none;	
+}
+#navbar li a.current {	
+	background-color: #EAEAEA;	
+	color: #000;		
+}
+#wrapper {
+	background-color: #EAEAEA;
+	/*height: 550px;*/
+	border-left: 2px solid #767676;
+	border-bottom: 2px solid #767676;
+	border-right: 2px solid #767676;
+	padding: 8px 0;
+}
+h2, h3 {
+	margin: 8px 8px 8px 10px;	
+}
+#content p {
+	line-height: 1.5;	
+	margin: 16px 16px 0 10px;	
+}
+#content .source {
+	float: right;
+	font-size: 0.7em;
+	
+}
+.clearfix {clear:both;}
+#content a:link, #content a:visited {
+	color: #039ED6;
+	text-decoration: none;	
+}
+#content a:hover, #content a:active {
+	text-decoration: underline;
+}
+form {
+	margin-top: 16px;	
+}
+input {
+	width: 45px;
+	padding: 2px;	
+}
+label {
+	margin-left: 10px;	
+}
+#rgbConvert {	
+	margin: 0 16px;
+	width: 100px;
+}
+#hexConvert {	
+	margin: 0 8px 0 16px;
+	width: 110px;
+}
+#in_hex, #out_hex {
+	width: 85px;	
+}
+#content ul {
+	margin-left: 28px;
+	list-style: square;
+}
+#content li {
+	margin-top: 6px;
+}
+#clone {
+	float: left;
+	margin: 0 8px 0 26px;
+	padding: 1px 0;
+	width: 125px;
+}
+#rgbToHex, #hexToRGB, #info {
+	background-color: #FFF;
+	border: 2px solid #E0E0E0;
+	margin: 0 auto;
+	padding-bottom: 24px;	
+	width: 624px; 		
+}
+#info {
+	margin-top: 6px;	
+}
+#rgbToHex {display: block; position:relative;}
+#hexToRGB {display: none;}
+#rgbPreview, #hexPreview {
+	background-color: #f00;
+	border: 1px solid #000;	
+	float: left;		
+	height: 100px;
+	margin: 8px 16px 16px 24px;		
+	width: 100px;
+}
+#rgbText {color:#FF0000}
+#hexText {color: #0FC;}

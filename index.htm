@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RGB/Hex Color Converter</title>
+<link href="_css/style_new.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/ico" href="/favicon.ico" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<div id="header">
+			<h1>RGB-Hex <span class="blue">Converter</span></h1>			
+		</div>
+		
+		<div id="navbar">
+			<ul>
+				<li><a href="javascript:void(0)" onclick="shiftTo('rgbToHex')" class="current" title="RGB to Hex">RGB to Hex</a></li>
+				<li><a href="javascript:void(0)" onclick="shiftTo('hexToRGB')" class="" title="Hex to RGB">Hex to RGB</a></li>
+				<!--<li><a href="#">Link three</a></li>-->				
+			</ul>		
+		</div> <!--#navbar-->
+		
+		<div id="wrapper">
+			<div id="content">
+				<div id="rgbToHex">
+					<h2>RGB to Hex Converter</h2>					
+					
+					<label for="in_R" title="in_R">R:</label>
+					<input id="in_R" name="in_R" type="text" value="255" />
+	
+			        <label for="in_G" title="in_G">G:</label>
+					<input id="in_G" name="in_G" type="text" value="0" />
+			
+			        <label for="in_B" title="in_B">B:</label>
+					<input id="in_B" name="in_B" type="text" value="0" />
+			
+			        <input type="button" id="rgbConvert" value="Convert to Hex" />		        
+					<input id="out_hex" name="out_hex" type="text" value="#FF0000" />		
+					<br />
+					<br />
+					<input type="button" id="clone" value="Clone/convert value" />					
+					<br />
+					<br />
+					<h2>Sample of result:</h2>
+					<span id="rgbPreview"></span>
+					<p id="rgbText">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&quot;</p>
+
+				</div> <!--#colLeft-->
+				
+				<div id="hexToRGB">
+					<h2>Hex to RGB Converter</h2>
+										
+					<label for="in_hex" title="in_hex">#</label>
+					<input id="in_hex" name="in_hex" type="text" value="00FFCC" />
+					
+					<input type="button" id="hexConvert" value="Convert to RGB" />	
+					
+					<label for="out_R" title="out_R">R:</label>
+					<input id="out_R" name="out_R" type="text" value="0" />
+	
+			        <label for="out_G" title="out_G">G:</label>
+					<input id="out_G" name="out_G" type="text" value="255" />
+			
+			        <label for="out_B" title="out_B">B:</label>
+					<input id="out_B" name="out_B" type="text" value="204" />
+						        	        							
+        			<br />
+					<br />
+					<h2>Sample of result:</h2>
+					<span id="hexPreview"></span>
+					<p id="hexText">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&quot;</p>
+				</div>
+
+
+				<div id="info">
+					<h3>About the App</h3>
+					<p>The RGB color model is an additive color model in which red, green, and blue are combined to produce a set representing 16.7 million color combinations. Each value is represented by a number from 0 to 255: for example, the RGB value for white would be the maximum of all combinations: 255, 255, 255. Hexadecimal is a positional numeral system of base 16 that denotes values using the symbols 0-9 and the letters A-F to represent the numbers 10-15. Hex codes are commonly used in CSS styles when creating web pages, and RGB color codes can be converted to a hexadecimal system by converting each color value to its corresponding hex string and concatenating the results. For example, white, represented as 255 255 255 in RGB, becomes #FFFFFF in hexadecimal.</p>
+					<p class="source">Source: Compiled from Wikipedia</p>
+					<div class="clearfix"></div>
+				</div>
+			</div> <!--#content-->
+		</div> <!--#wrapper-->
+		
+	</div> <!--#container-->
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="_scripts/rgb_hex.js"></script>
+<script type="text/javascript" src="_scripts/page_swap.js"></script>
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9633739-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+</body>
+</html>
