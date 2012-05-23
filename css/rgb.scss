@@ -78,7 +78,12 @@ p {
 }
 
 a {
+  color: $blue;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 
@@ -191,7 +196,7 @@ input[type="submit"] {
 }
 
 #previewBox {
-	background-color: red;
+  background-color: red;
 	border: 1px solid black;	
 	float: left;
 	margin-right: 15px;	
@@ -200,4 +205,9 @@ input[type="submit"] {
 
 #previewText {
   color: red;
+}
+
+.credits {
+  color: $light-gray;
+  text-align: center;
 }

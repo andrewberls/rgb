@@ -40,7 +40,10 @@ p {
     font-size: 0.7em; }
 
 a {
+  color: #039ed6;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 body {
   background-color: black;
@@ -145,3 +148,7 @@ input[type="submit"] {
 
 #previewText {
   color: red; }
+
+.credits {
+  color: #cccccc;
+  text-align: center; }
